@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+.python-version
+
+# Outputs
+09_shortlist_outputs/
+10_output_notes/
+11_cache/

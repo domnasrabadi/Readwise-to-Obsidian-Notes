@@ -1,0 +1,11 @@
+[project]
+name = "readwise-highlights-to-notes"
+version = "0.1.0"
+description = "Pull Readwise Reader shortlist items and generate structured Markdown notes from highlights."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv",
+    "requests",
+    "rich",
+]

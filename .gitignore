@@ -1,0 +1,21 @@
+.DS_Store
+**/.DS_Store
+
+# Secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local archives / large artifacts
+archive/
+99_archive/
+
+# Generated outputs
+**/09_shortlist_outputs/
+**/10_output_notes/
+**/11_cache/
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/.venv/
