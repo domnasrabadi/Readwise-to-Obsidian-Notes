@@ -88,16 +88,9 @@ def frontmatter_for(
     return {
         "author": author or ((book or {}).get("author") or "").strip(),
         "category": category or ((book or {}).get("category") or "").strip(),
-        "cover_image_url": cover_image_url,
-        "exported_at": iso_now(),
         "highlights_count": highlights_count,
         "published_date": published_date or ((book or {}).get("published_date") or ""),
-        "readwise_book_id": book_id,
-        "reader_doc_id": (reader_doc.get("id") or "").strip(),
-        "reader_url": reader_url,
         "shortlist_added": shortlist_added,
-        "site_name": site_name,
-        "source_url": source_url or ((book or {}).get("source_url") or ""),
         "title": title or ((book or {}).get("title") or ""),
     }
 
@@ -180,4 +173,3 @@ def load_shortlist_and_books(*, token: str, top_level_only: bool) -> Tuple[List[
     )
     books = fetch_all_books(token=token, use_cache=True)
     return shortlist, books
-
